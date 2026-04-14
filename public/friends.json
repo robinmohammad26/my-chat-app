@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "best friend"],
+    "bio": "Friend since school days. Loves cricket and late-night chats.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in college. Passionate about photography and design.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/31.jpg",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["office", "gym buddy"],
+    "bio": "Work colleague and gym partner. Keeps me motivated.",
+    "goal": 10,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "Farhana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/41.jpg",
+    "email": "farhana.akter@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Grew up in the same neighborhood. Very caring and supportive.",
+    "goal": 14,
+    "next_due_date": "2026-04-13"
+  },
+  {
+    "id": 5,
+    "name": "Mehedi Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "mehedi.hasan@gmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["university", "travel buddy"],
+    "bio": "Travel companion during university life. Loves adventure.",
+    "goal": 21,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Islam",
+    "picture": "https://randomuser.me/api/portraits/women/61.jpg",
+    "email": "sadia.islam@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["online friend", "writer"],
+    "bio": "Met online through blogging. Shares similar interests in writing.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/71.jpg",
+    "email": "rakib.hossain@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["football", "local friend"],
+    "bio": "Plays football together every weekend. Fun and energetic.",
+    "goal": 12,
+    "next_due_date": "2026-04-13"
+  },
+  {
+    "id": 8,
+    "name": "Mim Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/women/81.jpg",
+    "email": "mim.chowdhury@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["colleague", "designer"],
+    "bio": "Creative colleague with a great sense of design.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  }
+]
