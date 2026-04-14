@@ -30,7 +30,7 @@
     "email": "tanvir.hasan@gmail.com",
     "days_since_contact": 9,
     "status": "almost due",
-    "tags": ["office", "gym buddy"],
+    "tags": ["Work"],
     "bio": "Work colleague and gym partner. Keeps me motivated.",
     "goal": 10,
     "next_due_date": "2026-04-15"
@@ -42,7 +42,7 @@
     "email": "farhana.akter@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["neighbor", "family friend"],
+    "tags": ["neighbor"],
     "bio": "Grew up in the same neighborhood. Very caring and supportive.",
     "goal": 14,
     "next_due_date": "2026-04-13"
@@ -54,7 +54,7 @@
     "email": "mehedi.hasan@gmail.com",
     "days_since_contact": 30,
     "status": "overdue",
-    "tags": ["university", "travel buddy"],
+    "tags": ["university"],
     "bio": "Travel companion during university life. Loves adventure.",
     "goal": 21,
     "next_due_date": "2026-03-25"
@@ -66,7 +66,7 @@
     "email": "sadia.islam@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",
-    "tags": ["online friend", "writer"],
+    "tags": ["online friend"],
     "bio": "Met online through blogging. Shares similar interests in writing.",
     "goal": 10,
     "next_due_date": "2026-04-20"
