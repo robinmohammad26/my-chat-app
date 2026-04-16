@@ -3,6 +3,7 @@ import { FriendsContext } from '../../context/FriendsContext';
 import callImg from '../../assets/call.png';
 import textImg from '../../assets/text.png';
 import videoImg from '../../assets/video.png';
+import { Link } from 'react-router';
 
 const TimelinePage = () => {
     const { contactFriend } = useContext(FriendsContext);
@@ -14,10 +15,11 @@ const TimelinePage = () => {
 
     if (!filteredData || filteredData.length === 0) {
         return (
-            <div className='container mx-auto py-10'>
-                <h1 className='text-center text-3xl font-bold'>
+            <div className='container mx-auto py-10 mb-5 text-center'>
+                <h1 className='text-center text-3xl font-bold mb-5'>
                     Timeline Page Empty
                 </h1>
+                <button className='btn btn-warning text-white'><Link to={'/'}>Go To Home</Link></button>
             </div>
         );
     }
@@ -28,7 +30,7 @@ const TimelinePage = () => {
 
             <div className="dropdown dropdown-bottom mt-4">
                 <div tabIndex={0} role="button" className="btn m-1">
-                    Filter ⬇️
+                    Filter timeline 
                 </div>
 
                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow">
