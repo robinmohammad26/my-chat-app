@@ -19,7 +19,7 @@ const StatusPage = () => {
     ];
 
     if (!contactFriend.length > 0) {
-        return <div className='container mx-auto my-10 text-center'>
+        return <div className='container mx-auto my-10 text-center px-3'>
             <h1 className='text-2xl font-bold mb-5'>Empty Page</h1>
             <button className='btn btn-warning text-white'><Link to={'/'}>Go To Home</Link></button>
         </div>

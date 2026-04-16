@@ -8,7 +8,7 @@ const AllFriends = () => {
 
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto px-3'>
             <h1 className='text-2xl font-bold my-10 border-t border-gray-400 py-5'>Your Friends</h1>
             {loadFriends ? (
                 <div className='flex justify-center items-center my-15'><ScaleLoader

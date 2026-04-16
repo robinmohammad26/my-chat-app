@@ -25,7 +25,7 @@ const TimelinePage = () => {
     }
 
     return (
-        <div className='container mx-auto my-12'>
+        <div className='container mx-auto my-12 px-3'>
             <h1 className='text-4xl font-bold'>Timeline</h1>
 
             <div className="dropdown dropdown-bottom mt-4">

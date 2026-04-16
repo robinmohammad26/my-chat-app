@@ -16,8 +16,6 @@ const FriendDetails = () => {
 
     const expectedFriend = friends.find((friend) => String(friend.id) === id);
 
-    // const [contactFriend, setContactFriend] = useState([]);
-
     const contactFdHandle = (type) => {
 
         const updataFriend = {
@@ -27,13 +25,13 @@ const FriendDetails = () => {
 
         setContactFriend([...contactFriend, updataFriend])
 
-        if(type === "call"){
+        if (type === "call") {
             toast.success(`${updataFriend.name} Calling Now`)
         }
-        else if(type === "text"){
+        else if (type === "text") {
             toast.success(`${updataFriend.name} Text Now`)
         }
-        else if(type === "video"){
+        else if (type === "video") {
             toast.success(`${updataFriend.name} Video Calling Now`)
         }
 
@@ -60,22 +58,30 @@ const FriendDetails = () => {
 
                             <h2 className="text-lg font-semibold">{expectedFriend.name}</h2>
 
-                            <div className="flex justify-center gap-2">
-                                <span>
-                                    {expectedFriend.status === 'on-track' ? <span className='px-3 py-1 bg-green-300 rounded-full'>{expectedFriend.status}</span> : ''}
-                                    {expectedFriend.status === 'overdue' ? <span className='px-3 py-1 bg-red-300 rounded-full'>{expectedFriend.status}</span> : ''}
-                                    {expectedFriend.status === 'almost due' ? <span className='px-3 py-1 bg-amber-300 rounded-full'>{expectedFriend.status}</span> : ''}
+                            <div className="flex flex-col justify-center gap-2">
+                                <div>
+                                    <span>
+                                    {expectedFriend.status === 'on-track' ? <span className='text-xs px-3 py-1 bg-green-300 rounded-full'>{expectedFriend.status}</span> : ''}
+                                    {expectedFriend.status === 'overdue' ? <span className='text-xs px-3 py-1 bg-red-300 rounded-full'>{expectedFriend.status}</span> : ''}
+                                    {expectedFriend.status === 'almost due' ? <span className='text-xs px-3 py-1 bg-amber-300 rounded-full'>{expectedFriend.status}</span> : ''}
                                 </span>
-                                <span className="bg-green-100 text-green-600 text-xs px-3 py-1 rounded-full">
-                                    {expectedFriend.tags}
-                                </span>
+                                </div>
+                               <div>
+                                 {expectedFriend.tags.map((res, ind) => {
+                                    return (
+                                        <span key={ind} className="bg-green-100 text-green-600 text-xs px-3 py-1 rounded-full mr-2">
+                                            {res}
+                                        </span>
+                                    )
+                                })}
+                               </div>
                             </div>
 
                             <p className="text-sm text-gray-500 italic">
-                                "Former colleague, great mentor"
+                                {expectedFriend.bio}
                             </p>
 
-                            <p className="text-sm text-gray-400">Preferred: email</p>
+                            <p className="text-sm text-gray-400">Preferred: {expectedFriend.email}</p>
 
 
                             <div className="space-y-2 pt-4">

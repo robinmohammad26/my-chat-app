@@ -1,10 +1,14 @@
 import React from 'react';
 import { FaPlus } from 'react-icons/fa';
+import useFriendsData from './hooks/useFriendsData';
 
 const Banner = () => {
+
+    const { friends } = useFriendsData();
+
     return (
         <>
-            <div className='container mx-auto'>
+            <div className='container mx-auto px-3'>
                 <div className="hero min-h-[40vh]">
                     <div className="hero-content text-center">
                         <div className="max-w-full">
@@ -19,7 +23,7 @@ const Banner = () => {
                 {/* Tab Section */}
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-5'>
                     <div className='px-1 py-10 rounded-md shadow-xl/30 text-center space-y-2'>
-                        <h3 className='font-bold text-3xl text-[#244D3F]'>10</h3>
+                        <h3 className='font-bold text-3xl text-[#244D3F]'>{friends.length}</h3>
                         <p className='text-[#64748B] text-[1.1rem]'>Total Friends</p>
                     </div>
                     <div className='px-1 py-10 rounded-md shadow-xl/30 text-center space-y-2'>
