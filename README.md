@@ -20,3 +20,9 @@ Short one-line description of your project.
 - React Router
 - React Icon
 - Rechart
+
+## 🛠️ Key Featured
+
+    - Filter Your Contact
+    - See Contact in Chart
+    - Show on time Alert

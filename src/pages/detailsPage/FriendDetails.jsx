@@ -26,13 +26,13 @@ const FriendDetails = () => {
         setContactFriend([...contactFriend, updataFriend])
 
         if (type === "call") {
-            toast.success(`${updataFriend.name} Calling Now`)
+            toast.success(`Call With ${updataFriend.name}`)
         }
         else if (type === "text") {
-            toast.success(`${updataFriend.name} Text Now`)
+            toast.success(`Text With ${updataFriend.name}`)
         }
         else if (type === "video") {
-            toast.success(`${updataFriend.name} Video Calling Now`)
+            toast.success(`Video Call With ${updataFriend.name}`)
         }
 
 
