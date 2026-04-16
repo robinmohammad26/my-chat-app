@@ -5,6 +5,12 @@ import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
 import RootLayout from './RootLayout/RootLayout'
 import HomePage from './pages/homePage/HomePage'
+import FriendDetails from './pages/detailsPage/friendDetails'
+import FriendsContextProvider from './context/FriendsContextProvider'
+import TimelinePage from './pages/timeline/TimelinePage'
+import StatusPage from './pages/status/StatusPage'
+import ErrorPage from './pages/errorPage/ErrorPage'
+
 
 const router = createBrowserRouter([
   {
@@ -17,18 +23,25 @@ const router = createBrowserRouter([
       },
       {
         path: '/timeline',
-        element: <h1>This is Timeline Page</h1>
+        element: <TimelinePage />
       },
       {
         path: '/status',
-        element: <h1>This is Status Page</h1>
+        element: <StatusPage></StatusPage>
+      },
+      {
+        path: '/friendDetails/:id',
+        Component: FriendDetails
       }
-    ]
+    ],
+    errorElement: <ErrorPage></ErrorPage>
   }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <FriendsContextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </FriendsContextProvider>
   </StrictMode>,
 )
